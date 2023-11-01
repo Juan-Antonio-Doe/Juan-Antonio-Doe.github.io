@@ -8,7 +8,7 @@ table.blueTable {
 }
 table.blueTable td, table.blueTable th {
     border: 1px solid #AAAAAA;
-    padding: 8px 0px;
+    padding: 8px 0;
 }
 table.blueTable tbody td {
     font-size: 13px;
@@ -47,4 +47,30 @@ table.blueTable tfoot .links a{
     color: #FFFFFF;
     padding: 2px 8px;
     border-radius: 5px;
+}
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video {
+    flex: 1;
+    padding: 10px;
+}
+
+h4 {
+    color: #0074D9; /* Azul brillante, puedes elegir otro color */
+    font-size: 1.2em; /* Tamaño de fuente aumentado */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo cuando el cursor pasa por encima del primer iframe */
+iframe:nth-of-type(1):hover + h4 {
+    outline: 2px solid green; /* Contorno verde */
+}
+
+/* Estilo cuando el cursor pasa por encima del segundo iframe */
+iframe:nth-of-type(2):hover + h4 {
+    outline: 2px solid blue; /* Contorno azul */
 }
